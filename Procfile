@@ -1,1 +1,1 @@
-web: cd CDN;npm run start
+web: npm run start

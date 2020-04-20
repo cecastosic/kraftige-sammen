@@ -1,4 +1,5 @@
 /Local/node_modules
+/node_modules
 /CDN/node_modules
 /Local/package-lock.json
 /Local/yarn.lock
