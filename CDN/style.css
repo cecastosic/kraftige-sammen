@@ -38,11 +38,24 @@ nav a {
 nav a:hover {
   background: rgb(35, 74, 99);
   font-weight: normal;
+  color: white;
 }
+
+
+nav a:visited,
+nav h1 a:visited,
+header h1 a:visited,
+nav a:focus,
+nav h1 a:focus,
+header h1 a:focus {
+  color: white;
+}
+
 
 nav h1 a:hover {
   background: rgb(35, 74, 99);
   font-weight: bold;
+  color: white;
 }
 
 header div {
@@ -58,14 +71,18 @@ header img {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   color: white;
   background-color: orange;
   opacity: 0.9;
   font-weight: bold;
 }
 
+a:visited,
+a:focus {
+  background-color: none;
+  color: orange;
+}
 h1,
 h2,
 h4 {
@@ -107,6 +124,7 @@ header h1 a:hover {
 
 .highlight2 a {
   color: orange;
+  background-color:none;
 }
 
 .highlight2 a:hover {
@@ -268,6 +286,9 @@ button {
 button.zoom {
     padding: 1% 10%;
     width:auto;
+    height:auto;
+    font-size:50px;
+    min-height:100px;
 }
 
 .submit-area {

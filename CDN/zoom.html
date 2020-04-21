@@ -24,12 +24,19 @@
         <div class="square green"></div>
         <div class="square red"> </div>
       </div>
-      <p>When you are ready to join the call, <br />press Start button.</p>
+      <p>Next step</p>
       <div class="zoom-button">
         <button type="submit" class="zoom" onClick="StartZoom()">
-          START
+          START CALL
         </button>
       </div>
+      <p>or</p>
+      <div class="help-button">
+          <button type="submit" class="zoom" onClick="AskHelp()">
+            ASK FOR HELP
+          </button>
+        </div>
+  
       <h4 class="filltheform">
         If you need help with Zoom, call the number below <br />
         <span class="highlight2">HELP-LINE <a href="tel:4598765432">+45 98765432</a></span>
@@ -40,6 +47,10 @@
   <script>
     function StartZoom() {
       window.open("zoom-start.html", "_self");
+    }
+    function AskHelp() {
+      alert("A volunteer will contact you as soon as possible");
+      window.open("index.html", "_self");
     }
   </script>
 </body>
