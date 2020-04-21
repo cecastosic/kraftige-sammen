@@ -283,6 +283,11 @@ button {
     width: 100%;
 }
 
+.zoom-button button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 button.zoom {
     padding: 1% 10%;
     width:auto;
