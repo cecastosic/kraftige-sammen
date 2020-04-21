@@ -217,10 +217,10 @@
             <label for="video-no" class="radio-label"> No </label>
           </div>
         </div>
-      </section>
+      </section>-->
       <section>
         <h3>Step 8: What are your interests?</h3>
-        <div class="columns-2">
+        <div class="columns-100">
           <div class="rows-2">
             <input
               id="cooking"
@@ -282,18 +282,13 @@
             <label for="other"> other </label>
           </div>
         </div>
-        <p>
-          If you have selected other, please specify your interests in the box
-          below. Click on it and start typing inside it.
-        </p>
         <textarea
           class="text-area-style"
           id="flatmates-info"
           name="flatmates-info"
-          placeholder=""
+          placeholder="Please specify your interests"
         ></textarea>
       </section>
-    -->
     <section class="submit-area">
       <button type="submit" onClick="SubmittedData()">
         SUBMIT
@@ -307,7 +302,7 @@
     <p>Thank you :) </p> -->
   <script>
     function SubmittedData() {
-      alert("Form submitted and your data were sent, you can try zoom now");
+      alert("Form submitted and your data were sent");
       window.open("zoom.html", "_self");
     }
   </script>
