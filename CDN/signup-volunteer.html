@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Corona HACKATHON group 6</title>
+</head>
+
+<body>
+    <nav>
+        <h1><a href="index.html">KRAFTIGE SAMMEN</a></h1>
+        <a href="signup-volunteer.html">Join as volunteer</a>
+    </nav>
+
+    <header>
+        <p class="filltheform center">
+            Please <span class="highlight1">fill in the form</span> below if you want to help elders in your
+            neighborhood.
+        </p>
+    </header>
+    <main>
+        <section>
+            <!-- NAME  -->
+            <div class="rows-3">
+                <div class="columns-100">
+                    <label for="firstname">Name *</label>
+                    <input type="text" class="input-required" id="name" name="name"
+                        placeholder="insert name" required />
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- ADDRESS  -->
+            <div class="rows-3">
+                <div class="columns-100">
+                    <label for="postcode">Postal code *</label>
+                    <input type="text" class="input-required" id="postcode" name="postcode"
+                        placeholder="insert post code" required />
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <!-- PHONE NUMBER and EMAIL -->
+            <div class="rows-3">
+                <div class="columns-100">
+                    <label for="email">Email</label>
+                    <input type="email" class="input-required" id="email" name="email" placeholder="...@........"
+                        pattern="[a-zA-Z]{0-9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" />
+                </div>
+                <div class="columns-100">
+                    <label for="phone">Phone number</label>
+                    <input type="text" id="phone" name="phone" placeholder="12 34 56 78" required />
+                </div>
+            </div>
+        </section>
+        <section class="submit-area">
+            <button type="submit" onClick="SubmittedData()">
+                SUBMIT
+            </button>
+        </section>
+    </main>
+    <footer>&copy; 2020 Corona Hack Group 6 &hearts;</footer>
+    <script>
+        function SubmittedData() {
+            alert("You are a volunteer now, yeah! We will contact you!");
+            window.open("index.html", "_self");
+        }
+    </script>
+</body>
+
+</html>

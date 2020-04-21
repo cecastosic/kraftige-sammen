@@ -1,139 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Corona HACKATHON group 6</title>
-  </head>
 
-  <body>
-    <header>
-        <h1><a href="index.html">KRAFTIGE SAMMEN</a></h1>
-      <p class="filltheform center">
-        Please <span class="highlight1">fill in the form</span> below to let us
-        know what we can do for you.
-      </p>
-      <h4 class="filltheform">
-        If you need help with the form, call the number below <br />
-        <span class="highlight2"
-          >HELP-LINE <a href="tel:4598765432">+45 98765432</a></span
-        >
-      </h4>
-    </header>
-    <main>
-      <section>
-        <h3>Step 1: Your name</h3>
-        <!-- NAME  -->
-        <div class="rows-2">
-          <div class="columns-2">
-            <label for="firstname">First name *</label>
-            <input
-              type="text"
-              class="input-required"
-              id="firstname"
-              name="firstname"
-              placeholder="insert first name"
-              required
-            />
-          </div>
-          <div class="columns-2">
-            <label for="lastname">Last name *</label>
-            <input
-              type="text"
-              class="input-required"
-              id="lastname"
-              name="lastname"
-              placeholder="insert last name"
-              required
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Corona HACKATHON group 6</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">KRAFTIGE SAMMEN</a></h1>
+    <p class="filltheform center">
+      Please <span class="highlight1">fill in the form</span> below to let us
+      know what we can do for you.
+    </p>
+    <h4 class="filltheform">
+      If you need help with the form, call the number below <br />
+      <span class="highlight2">HELP-LINE <a href="tel:4598765432">+45 98765432</a></span>
+    </h4>
+  </header>
+  <main>
+    <section>
+      <h3>Step 1: Your name</h3>
+      <!-- NAME  -->
+      <div class="rows-3">
+        <div class="columns-100">
+          <label for="firstname">Name *</label>
+          <input type="text" class="input-required" id="name" name="name" placeholder="insert name" required />
         </div>
-      </section>
-      <section>
-        <h3>Step 2: Your address</h3>
-        <!-- ADDRESS  -->
-        <div class="rows-3">
-          <div class="columns-2">
-            <label for="area">Click on the box to pick your area *</label>
-            <select class="drop-menu-style" id="area" name="area" required>
-              <option value="Osterbro">Osterbro</option>
-              <option value="Ishoj">Ishoj</option>
-              <option value="Norrebro">Norrebro</option>
-              <option value="Sydhavn">Sydhavn</option>
-            </select>
-          </div>
-          <div class="columns-2">
-            <label for="postcode">Post code *</label>
-            <input
-              type="text"
-              class="input-required"
-              id="postcode"
-              name="postcode"
-              placeholder="insert post code"
-              required
-            />
-          </div>
+      </div>
+    </section>
+    <section>
+      <h3>Step 2: Your address</h3>
+      <!-- ADDRESS  -->
+      <div class="rows-3">
+        <div class="columns-100">
+          <label for="postcode">Post code *</label>
+          <input type="text" class="input-required" id="postcode" name="postcode" placeholder="insert post code"
+            required />
         </div>
-        <div class="rows-3">
-          <div class="columns-2">
-            <label for="address-street-name">Street: *</label>
-            <input
-              type="text"
-              class="input-required"
-              id="address-street-name"
-              name="address-street-name"
-              placeholder="insert street name"
-              required
-            />
-          </div>
-          <div class="columns-2">
-            <label for="address-house-number">House number *</label>
-            <input
-              type="text"
-              class="input-required"
-              id="address-house-number"
-              name="address-house-number"
-              placeholder="insert house number"
-              required
-            />
-          </div>
+      </div>
+      <div class="rows-3">
+        <div class="columns-100">
+          <label for="address-street-name">Street: *</label>
+          <input type="text" class="input-required" id="address-street-name" name="address-street-name"
+            placeholder="insert street name" required />
         </div>
-      </section>
-      <section>
-        <h3>Step 3: How do we contact you?</h3>
-        <!-- PHONE NR and EMAIL -->
-        <div class="rows-3">
-          <div class="columns-2">
-            <label for="email">Email (optional)</label>
-            <input
-              type="email"
-              class="input-required"
-              id="email"
-              name="email"
-              placeholder="...@........"
-              pattern="[a-zA-Z]{0-9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}"
-            />
-          </div>
-          <div class="columns-2">
-            <label for="phone">Phone number*</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="12 34 56 78"
-              required
-            />
-          </div>
+        <div class="columns-100">
+          <label for="address-house-number">House number *</label>
+          <input type="text" class="input-required" id="address-house-number" name="address-house-number"
+            placeholder="insert house number" required />
         </div>
-      </section>
+      </div>
+    </section>
+    <section>
+      <h3>Step 3: How do we contact you?</h3>
+      <!-- PHONE NR and EMAIL -->
+      <div class="rows-3">
+        <div class="columns-100">
+          <label for="phone">Phone number*</label>
+          <input type="text" id="phone" name="phone" placeholder="12 34 56 78" required />
+        </div>
+
+        <div class="columns-100">
+          <label for="email">Email (optional)</label>
+          <input type="email" class="input-required" id="email" name="email" placeholder="...@........"
+            pattern="[a-zA-Z]{0-9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" />
+        </div>
+      </div>
+    </section>
+    <!--
       <section>
         <h3>
           Step 4: Please invent a password for safety purposes. It should be at
           least 6 letters and 2 digits with no spaces.
         </h3>
-        <!-- PASSWORD -->
+
         <div class="rows-3">
           <div class="columns-2">
             <label for="password">Password*</label>
@@ -349,22 +293,24 @@
           placeholder=""
         ></textarea>
       </section>
-      <section class="submit-area">
-        <button type="submit" onClick="SubmittedData()">
-          SUBMIT
-        </button>
-      </section>
-    </main>
-    <footer>&copy; 2020 Corona Hack Group 6 &hearts;</footer>
+    -->
+    <section class="submit-area">
+      <button type="submit" onClick="SubmittedData()">
+        SUBMIT
+      </button>
+    </section>
+  </main>
+  <footer>&copy; 2020 Corona Hack Group 6 &hearts;</footer>
 
-    <!-- <p>Progress:</p>
+  <!-- <p>Progress:</p>
     <progress max="100" value="20"></progress>
     <p>Thank you :) </p> -->
-    <script>
-      function SubmittedData() {
-        alert("Form submitted and your data were sent, you can try zoom now");
-        window.open("zoom.html", "_self");
-      }
-    </script>
-  </body>
+  <script>
+    function SubmittedData() {
+      alert("Form submitted and your data were sent, you can try zoom now");
+      window.open("zoom.html", "_self");
+    }
+  </script>
+</body>
+
 </html>

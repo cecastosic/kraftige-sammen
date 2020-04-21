@@ -20,6 +20,31 @@ main {
   padding: 20px 0 0;
 }
 
+nav {
+  background: rgb(35, 74, 99);
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+nav a {
+  background: rgb(35, 74, 99);
+  color:#fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: rgb(35, 74, 99);
+  font-weight: normal;
+}
+
+nav h1 a:hover {
+  background: rgb(35, 74, 99);
+  font-weight: bold;
+}
+
 header div {
   margin: 20px auto;
   width: 70%;
@@ -104,12 +129,16 @@ section {
   width: 70%;
 }
 
-.rows-2,
-.rows-3 {
+.rows-2 {
   display: flex;
   flex-direction: row;
   /* border: solid rgb(82, 252, 60) 2px;
     border-radius: 10px; */
+}
+
+.rows-3 {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -124,6 +153,14 @@ section {
   width: 48%;
   /* border: solid rgb(229, 60, 252) 2px;
     border-radius: 10px; */
+}
+
+.columns-100 {
+  width: 100%;
+}
+
+.columns-100 input {
+  width: 93%;
 }
 
 input {
@@ -228,6 +265,27 @@ footer {
   margin-top: 70px;
   padding: 5px 0;
   text-align: center;
+}
+
+.password {
+  display: flex;
+}
+
+.password div {
+  width: 50px;
+  height: 50px;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
 }
 
 @media only screen and (max-width: 800px) {
