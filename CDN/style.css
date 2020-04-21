@@ -290,6 +290,8 @@ button {
 
 button.zoom {
     padding: 1% 10%;
+    margin-top: 0;
+    margin-bottom: 0; 
     width:auto;
     height:auto;
     font-size:50px;
